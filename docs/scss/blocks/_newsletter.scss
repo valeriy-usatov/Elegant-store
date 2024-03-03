@@ -1,0 +1,97 @@
+.newsletter {
+    padding-top: 101px;
+    text-align: center;
+    
+    background: rgb(226, 228, 227);
+    background-image: url("./../img/newsletter/newsleter-bg.jpg");
+    min-height: 360px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    // background-size: cover;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        bbackground-image: url(./../img/newsletter/newsleter-bg@2x.jpg);
+    }
+
+    @media(max-width:375px){
+        background-image: none;
+    }
+
+}
+.newsletter__title {
+
+    @media(max-width:500px){
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 121%;
+        letter-spacing: -0.02em;
+        text-align: center;
+    }
+}
+
+.newsletter__desc {
+    margin-top: 8px;
+    color: rgb(18, 18, 18);
+    font-size: clamp(14px, 0.844rem + 0.13vw, 18px);
+    font-weight: 400;
+    line-height: 157%;
+    letter-spacing: 0px;
+    text-align: center;
+}
+.newsletter__form {
+    position: relative;
+    // padding: 0 26px 0 48px;
+    margin: 0 auto;
+    margin-top: 32px;
+    max-width: clamp(19.438rem, 13.869rem + 23.76vw, 30.5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(108, 114, 117, 0.5);
+
+    // &::before {
+    //     content: "";
+        
+    //     position: absolute;
+    //     left: 19px;
+    //     top: 0px;
+    //     width: 24px;
+    //     height: 24px;
+        
+    //     background-image: url('./../img/icons/email.svg');
+    //     background-repeat: no-repeat;
+    //     transform: translateY(50%);
+    // }
+
+}
+.newsletter__form input {
+    padding: 12px 0;
+
+}
+.newsletter__form input::placeholder {
+    color: rgb(108, 114, 117);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    
+  
+}
+.newsletter__btn {
+    color: rgb(108, 114, 117);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        color: rgb(23, 24, 25); 
+    }
+}
+.newsletter__form--email {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}

@@ -1,0 +1,38 @@
+.header-mobile {
+	padding: 16px 0;
+	background: #ffc95c;
+	display: block;
+
+	@media(min-width:601px) {
+		display: none;
+	}
+	
+}
+.header-mobile-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-mobile__nav {
+	display: flex;
+	gap: 4px;
+}
+.header-mobile__logo {
+	font-family: var(--font-accent);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+	color: #000;
+}
+.header-mobile__btn {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+}
+.nav-icon {
+}
+.mobile-nav__btn {
+}
+.mobile-nav__count {
+}

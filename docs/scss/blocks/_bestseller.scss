@@ -1,0 +1,49 @@
+.bestseller {
+    padding: 48px 0 100px 0;
+}
+
+.bestseller__title {
+    margin-bottom: 48px;
+
+}
+.bestseller__cards {
+    display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
+    gap: 48px 24px;
+
+    @media(max-width: 650px){
+        grid-template-columns: repeat(auto-fit, minmax(152px, 1fr));
+        gap: 18px;
+    }
+
+    // @media(max-width: 450px){
+    //     grid-template-columns: repeat(2, 200px);
+    //     gap: 18px;
+    // }
+
+    @media(max-width:450px){
+        grid-template-columns: repeat(2, 152px);
+        gap: 8px;
+    }
+}
+
+.bestseller__cards .card__btn, .bestseller__cards .card__fav {
+    display: none;
+}
+
+
+.bestseller__cards .card {
+    max-width: 262px;
+
+    @media(max-width:600px){
+        max-width: 200px;
+    }
+
+    @media(max-width:500px){
+        max-width: 155px;
+    }
+    @media(max-width:375px){
+        width: 151px;
+    }
+}

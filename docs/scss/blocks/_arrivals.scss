@@ -1,0 +1,23 @@
+.arrivals {
+    padding: clamp(32px, 1.536rem + 1.98vw, 48px) 0;
+}
+
+.arrivals__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: clamp(40px, 1.536rem + 1.98vw, 48px);
+}
+.arrivals__title {
+}
+.headline-4 {
+}
+.arrivals__dots {
+    
+}
+.container-right {
+}
+.arrivals__slider {
+    display: flex;
+    gap: 24px;
+}

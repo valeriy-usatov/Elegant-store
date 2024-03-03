@@ -1,0 +1,128 @@
+.modal {
+  position: fixed;
+  top: 41px;
+  left: 0;
+  transform: translateX(-50%);
+  transition: all 0.6s ease-in;
+  z-index: 10;
+  pointer-events: none;
+  z-index: 100;
+  padding: 24px;
+  background-color: #fff;
+  width: 343px;
+  height: 812px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+}
+
+.modal__open {
+    transform: translateX(0%);
+  pointer-events: all;
+  opacity: 1;
+}
+
+.modal__top {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.madal__logo-row {
+  display: flex;
+  justify-content: space-between;
+}
+.modal__logo {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.modal__logo span {
+  color: #6c7275;
+}
+
+.modal__close {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.modal__form {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  padding: 11px 16px;
+  border: 1px solid #6c7275;
+  border-radius: 6px;
+  
+}
+.modal__nav {
+}
+.modal__item {
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e8ecef;
+
+  &:first-child {
+    padding-top: 0;
+  }
+}
+
+.modal__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  color: #141718;
+}
+.modal__bottom {
+  display: flex;
+  flex-direction: column;
+  // gap: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 178%;
+  letter-spacing: -0.02em;
+  color: #6c7275;
+}
+.modal__cart {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e8ecef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-mobile__count.nav__btn-count {
+  color: #fff;
+  background-color: #141718;
+}
+
+.modal__wishlist {
+  padding: 8px 0;
+  border-bottom: 1px solid #e8ecef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal__wishlist-text {
+}
+.modal__btn {
+  margin-top: 20px;
+  padding: 10px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 178%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fff;
+  width: 295px;
+  height: 52px;
+  border-radius: 6px;
+  background-color: #141718;
+}
+.modal__socials {
+  margin-top: 20px;
+  display: flex;
+  gap: 24px;
+}
