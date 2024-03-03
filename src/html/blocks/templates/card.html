@@ -1,0 +1,23 @@
+
+<div class="card">
+    <div class="card__picture">
+        <div class="card__new">@@status</div>
+        <div class="card__fav">
+            <img src="./img/icons/heart.svg" alt="heat">
+        </div>
+        <img src="./img/bestseller/@@img.jpg" srcset="./img/bestseller/@@img@2x.jpg 2x" alt="photo">
+        <div class="card__btn">
+            <button class="btn">Add to cart</button>
+        </div>
+    </div>
+    <div class="card__desc">
+        <div class="card__rating">
+            @@for (let i = 0; i < context.rating; i++) {
+                <img src="./img/icons/Star.svg" alt="star">
+            }
+        </div>
+        <div class="card__title">@@title</div>
+        <div class="card__price">@@price</div>
+    </div>  
+    <a href="#!" class="card__link"></a>
+</div>
